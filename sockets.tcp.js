@@ -91,13 +91,14 @@ exports.setNoDelay = function (socketId, noDelay, callback) {
     }
 };
 
-exports.connect = function (socketId, peerAddress, peerPort, callback) {
-    var win = callback && function () {
-        callback(0);
+exports.connect = function (socketId, peerAddress, peerPort, successCallback, failCallback) {
+    var win = successCallback && function () {
+        successCallback(0);
     };
-    var fail = callback && function (error) {
+    var fail = successCallback && function (error) {
         var sendInfo = createErrorObj(error, socketId);
 
+        failCallback(sendInfo);
         exports.onReceiveError.fire(sendInfo);
     };
     exec(win, fail, 'ChromeSocketsTcp', 'connect', [socketId, peerAddress, peerPort]);
