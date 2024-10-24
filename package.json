@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-chrome-apps-sockets-tcp",
+  "name": "@herdwatch/cordova-plugin-chrome-apps-sockets-tcp",
   "version": "1.3.8-dev",
   "description": "This plugin provides TCP client sockets for Android and iOS.",
   "cordova": {
-    "id": "cordova-plugin-chrome-apps-sockets-tcp",
+    "id": "@herdwatch/cordova-plugin-chrome-apps-sockets-tcp",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcp.git"
+    "url": "https://github.com/herdwatch-apps/cordova-plugin-chrome-apps-sockets-tcp.git"
   },
   "keywords": [
     "chrome",
@@ -31,7 +31,7 @@
   "author": "",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcp/issues"
+    "url": "https://github.com/herdwatch-apps/cordova-plugin-chrome-apps-sockets-tcp/issues"
   },
-  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-sockets-tcp"
+  "homepage": "https://github.com/herdwatch-apps/cordova-plugin-chrome-apps-sockets-tcp"
 }
